@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+/*--------------------------*/
+html,body{
+	background:#0BF;
+	font-family: 'Lora', serif;
+}
+
+div.clear{
+	clear:both;	
+}
+
+/*--------------------------*/
+div.container{
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	box-sizing:border-box;
+}
+/*--------------------------*/
+div.header{
+	height:150px;
+	color:#FFF;
+	background:url(../images/header.jpg);
+	line-height:150px;
+	text-align:center;
+	font-size:50px;
+	padding-left:20px;
+}
+
+/*--------------------------*/
+div.content{
+	text-align:justify;
+	background:#FFF;
+	padding:20px;
+}
+
+div.content img.left{
+	float:left;	
+	margin-right:15px;
+	border:5px solid #FFF;
+	box-shadow:0px 0px 5px 2px #999;
+}
+
+div.content img.right{
+	text-align:right;
+	float:right;	
+	margin-left:15px;
+	border:5px solid #FFF;
+	box-shadow:0px 0px 5px 2px #999;
+}
+
+div.footer{
+	text-align:center;
+	background:#F6C;
+	padding:20px;
+}

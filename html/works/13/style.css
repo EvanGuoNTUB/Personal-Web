@@ -1,0 +1,73 @@
+@charset "utf-8";
+body {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(imgs/bg.jpg);
+	font-family: Arial, "微軟正黑體", sans-serif;
+}
+.box {
+	float: left;
+	width: 980px;
+}
+.btn {
+	float: left;
+}
+
+.content {
+	width: 470px;
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom: 25px;
+}
+#nav {
+	width: 300px;
+	height: 40px;
+	margin:0 auto;
+	
+}
+.link {
+	float: left;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+}
+
+
+h1,h2 {
+	color: #B34A0B;
+	font-size: 1.8em;
+	margin: 0;
+	
+}
+h3 {
+	color: #B34A0B;
+	font-size: 1.5em;
+}
+
+
+small {
+	display: block;
+	text-align: center;
+	
+	margin-bottom: 20px;
+	background-color: #FDEFD5;
+	border-top: 5px solid #DD811A;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.center {
+	width: 900px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+iframe {
+	margin-top: 20px;
+	border-radius: 30px;
+	margin-bottom: 10px;
+}

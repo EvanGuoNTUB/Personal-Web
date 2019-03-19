@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+/* CSS Document */
+
+
+/*--------------*/
+/*   html,body  */
+/*--------------*/
+
+html,body{
+line-height:28px;
+font-family: 'cwTeXFangSong', serif;
+background-color:#FFC;
+font-size:20px;
+}
+
+/*--------------*/
+/*   container  */
+/*--------------*/
+
+div.container{
+width:800px;
+margin-left:auto;
+margin-right:auto;	
+border:1px solid #000;
+box-shadow:0px 0px 10px 1px #000;
+}
+
+/*--------------*/
+/*   header  */
+/*--------------*/
+
+div.header{
+height:150px;
+line-height:150px;
+padding-left:25px;
+background:#3FC;
+color:#33F;
+}
+
+div.header h1{
+margin:0;	
+font-weight;400;	
+}
+
+/*--------------*/
+/*   content  */
+/*--------------*/
+
+div.content{
+text-align:justify;
+padding:20px 25px;
+background-color:#fff;
+}
+
+div.content span.first{
+font-size:40px;
+}
+
+div.content h2{
+font-weight;400;	
+border-left:10px solid #33F;
+padding-left:10px;
+}

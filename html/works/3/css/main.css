@@ -1,0 +1,89 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+/* CSS Document */
+
+
+/*--------------*/
+/*   html,body  */
+/*--------------*/
+
+html,body{
+line-height:28px;
+font-family: 'cwTeXFangSong', serif;
+background-color:#FFC;
+background-image:url(../images/background.jpg);
+background-repeat:repeat-x;
+font-size:20px;
+margin:0;
+}
+
+/*--------------*/
+/*   container  */
+/*--------------*/
+
+div.container{
+width:800px;
+margin-top:10px;
+margin-bottom:10px;
+margin-left:auto;
+margin-right:auto;	
+border:1px solid #CCc;
+box-shadow:0px 0px 10px 1px #777;
+
+}
+
+/*--------------*/
+/*   header  */
+/*--------------*/
+
+div.header{
+height:150px;
+line-height:150px;
+padding-left:25px;
+background:#FFC;
+color:#39F;
+
+}
+
+div.header h1{
+margin:0;	
+font-weight;400;	
+}
+
+div.clear{
+clear:both;	
+}
+
+/*--------------*/
+/*   content  */
+/*--------------*/
+
+div.content{
+text-align:justify;
+padding:20px 25px;
+background-color:#fff;
+}
+
+div.content span.first{
+font-size:40px;
+}
+
+div.content h2{
+font-weight;400;	
+border-left:10px solid #33F;
+padding-left:10px;
+}
+
+div.content img.author{
+float:left;	
+border-radius:40px;
+box-shadow:0px 0px 10px 1px #999;
+}
+
+div.content h1.title{
+float:left;	
+margin:30px 0 0 20px;	
+font-weight:400;
+color:#39F;
+}

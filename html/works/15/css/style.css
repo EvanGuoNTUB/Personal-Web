@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #FBA4F8;
+	font-family:Arial,'Noto Sans TC',"微軟正黑體","Microsoft JhengHei",msjh,"黑體-繁","Heiti TC",sans-serif;
+}
+body,body header,nav,ul,#banner,img,main,section,i{
+	width: 100%;
+	float: left;
+}
+nav{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	opacity: 0.8;
+	z-index: 999;
+}
+nav ul{
+	list-style-type: none;
+	background-color: #E12BF5;	
+}
+nav li{
+	width: 20%;
+	float: left;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+}
+nav li:last-child{
+	border: none;
+}
+nav li:hover{
+	background-color:#FBA4F8;
+	color:#E12BF5;
+
+}
+
+nav a{
+	display: block;
+	text-decoration: none;
+	color:#FFFFFF;
+}
+nav a:hover{
+text-decoration: none;
+}
+section header{
+	text-align: center;
+	color: #FFFFFF;
+	position: relative;
+	margin-top: 2%;
+	margin-bottom:2%;
+}
+section header::before{
+	content: "";
+	width: 100%;
+	height: 2%;
+	top:55%;
+	left: 0;
+	background-color: #FFFFFF;
+	position: absolute;
+}
+h1{
+	display: inline-block;
+	background-color: #FBA4F8;
+	padding: 1% 2%;
+	position: relative;
+}
+i,h2{
+	font-size: 1em;
+}
+figure{
+	float: left;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.pt_b{
+	width: 40%;
+	border-left: solid 2px #FBA4F8;
+}
+.pt_s{
+	width: 20%;
+	border-left: solid 1px #FBA4F8;
+}
+.row{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.col-6,.col-md-4,.col-lg-3,.container-fluid{
+	margin: 0;
+	padding: 0;
+}
+.container-fluid figure{
+border-left: solid 1px #FBA4F8;
+}
+figcaption{
+	color:  #FFFFFF;
+	padding-left: 15px;
+	height: 40px;
+	line-height: 40px;
+	background-color: rgba(225,43,245,0.7);
+	position: absolute;
+	bottom:  0%;
+	width: 100%;
+	font-size: 1.33em;
+}
+.card-deck,.card{
+	float: left;
+	margin: 0;
+}
+.card-footer{
+	text-align: right;
+}
+form{
+	float: left;
+	width: 100%;
+}
+button{
+	width: 100%;
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#000DFF' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#000DFF' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-indicators li{
+	background-color: #000DFF;
+}
+.carousel-indicators .active{
+	background-color: #16FBFF;
+}
+/*桌機*/
+@media screen and (min-width: 768px){
+	nav{
+		left: 0;
+	}
+	nav li{
+		border-right: solid 1px #FA89C9;
+	}
+	#banner_md{
+		display: none;
+	}
+}
+/*手機*/
+@media screen and (max-width: 767px){
+	nav{
+		width: 30%;
+		right: 0;
+	}
+	nav li{
+		width: 100%;
+		border-bottom: solid 1px #FA89C9;
+	}
+	#banner{
+		display: none;
+	}
+	.pt_b,.pt_s{
+		width: 50%;
+		border-bottom:  solid 1px #FBA4F8;
+	}
+	
+}

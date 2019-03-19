@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<style type="text/css">
+.side {
+	height: 40px;
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.corner {
+	height: 40px;
+	width: 40px;
+	float: left;
+}
+#top_side {
+	background-image: url(images/frame_02.png);
+	height: 40px;
+	width: 900px;
+	float: left;
+}
+#content {
+	background-image: url(images/bg.png);
+	width: 900px;
+	float: left;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+#bottom_side {
+	background-image: url(images/frame_11.png);
+	float: left;
+	height: 40px;
+	width: 900px;
+}
+</style>
+</head>
+
+<body>
+<div class="side">
+  <div class="corner"><img src="images/frame_01.png" width="40" height="40" alt=""/></div>
+  <div id="top_side"></div>  
+  <div class="corner"><img src="images/frame_04.png" width="40" height="40" alt=""/></div>
+  <div id="content">
+    <p>(修改會員資料)</p>
+    <form id="form1" name="form1" method="post" action="">
+      <p>
+        <label for="name">*姓名:</label>
+        <input name="name" type="text" required="required" id="name" placeholder="請輸入姓名" title="請輸入姓名" autocomplete="on" size="15" />
+      </p>
+      <p>
+        <label for="account">*帳號:</label>
+        ritadesign
+      </p>
+      <p>
+        <label for="id">*身份証字號:</label>
+        <input name="id" type="text" required="required" id="id" autocomplete="on" maxlength="10" />
+      </p>
+    </form>
+  </div>
+  <div class="side">
+    <div class="corner"><img src="images/frame_10.png" width="40" height="40" alt=""/></div>
+    <div id="bottom_side"></div>
+    <div class="corner"><img src="images/frame_12.png" width="40" height="40" alt=""/></div>
+  </div>
+</div>
+</body>
+</html>

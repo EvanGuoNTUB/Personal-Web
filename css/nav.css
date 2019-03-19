@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Patua+One);
+#nav_trigger{
+  z-index: 6;
+}
+svg{
+  position: fixed;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  z-index: 6;
+}
+rect.line{
+  fill:rgb(255,255,255);
+  z-index: 6;
+}
+rect.bg{
+  fill:rgb(0,0,0);
+  z-index: 6;
+}
+.close path{
+  stroke-width:5;
+  stroke:rgb(255,255,255);
+}
+.close,.close:hover{
+  opacity: 1;
+}
+
+.nav-trigger.close .bg{
+  fill:rgba(0,0,0,0);
+}
+.nav-trigger.active .bg{
+  fill:rgba(0,0,0,0.3);
+}
+.nav-trigger.active:hover .bg{
+  fill:rgba(0,0,0,1);
+}
+.nav-trigger.active rect.line{
+  fill:rgba(255,255,255,0.5);
+}
+.nav-trigger.active:hover rect.line{
+  fill:rgb(255,255,255);
+}
+
+.nav-trigger.open .close{
+  display: none;
+}
+.nav-trigger.close .open{
+  display: none;
+}
+.nav-trigger.active .close{
+  display: none;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 5;
+}
+nav a{
+  width: 100%;
+  height: 100%;
+  display: block;
+  float: left;
+}
+
+
+
+nav.out {
+  pointer-events: none;
+}
+
+nav ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+nav ul {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+nav li {
+  height: 20%;
+  position: relative;
+  background: #222;
+  color: #fff;
+  font-family: 'Patua One', cursive;
+  font-size: 60px;
+  line-height: 20%;
+}
+
+nav li:hover {
+  background: #364e41;
+}
+
+nav.in li:nth-child(1) {
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s, opacity 0.5s linear 0.1s;
+}
+
+nav.in li:nth-child(2) {
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s, opacity 0.5s linear 0.2s;
+}
+
+nav.in li:nth-child(3) {
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s, opacity 0.5s linear 0.3s;
+}
+
+nav.in li:nth-child(4) {
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s, opacity 0.5s linear 0.4s;
+}
+
+nav.in li:nth-child(5) {
+  transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s, opacity 0.5s linear 0.5s;
+}
+
+nav.out li:nth-child(5) {
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s, opacity 0.3s linear 0s;
+}
+
+nav.out li:nth-child(4) {
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.05s, opacity 0.3s linear 0.05s;
+}
+
+nav.out li:nth-child(3) {
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.1s, opacity 0.3s linear 0.1s;
+}
+
+nav.out li:nth-child(2) {
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.15s, opacity 0.3s linear 0.15s;
+}
+
+nav.out li:nth-child(1) {
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.2s, opacity 0.3s linear 0.2s;
+}
+
+nav.out li {
+  transform: translateY(300%);
+  opacity: 0;
+}
+
+nav.in li {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.nav-label {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  top: 50%;
+  margin-top: -8px;
+  text-transform: uppercase;
+}
+
+
+
