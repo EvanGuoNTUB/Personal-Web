@@ -41,7 +41,7 @@
     //就進去執行裡面的指令。如果不在乎有沒有寄成功就只要寫$mail->Send()
   	
     {
-  		$Functions->messageHref("寄信失敗"); //
+  		$Functions->message("寄信失敗"); //
   	}
   	else
   	{   
