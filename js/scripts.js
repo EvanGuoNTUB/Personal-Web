@@ -1,11 +1,3 @@
-//-------------------------
-// form
-//-------------------------
-$(function(){
-	$('.button').click(function(){
-		alert("Thanks for your feeback!");
-	});
-});
 $(function(){
 	$('nav a').click(function(){
 		navTrigger.className = "nav-trigger open";
